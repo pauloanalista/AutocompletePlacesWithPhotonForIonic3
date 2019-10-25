@@ -12,7 +12,7 @@ ionic generate component AutocompletePhoton
 ```
 
 ## Código autocomplete-photon.html
-```sh
+```html
 <ion-item>
   <ion-label stacked>
     <span class="titulo_label">{{label}}</span>
@@ -31,7 +31,7 @@ ionic generate component AutocompletePhoton
 ```
 
 ## Código autocomplete-photon.scss
-```sh
+```css
 autocomplete-photon {
     ion-list {
         ion-item{
@@ -46,7 +46,7 @@ autocomplete-photon {
 ```
 
 ## Código autocomplete-photon.ts
-```sh
+```typescript
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 import { Headers, Http, Response } from '@angular/http';
@@ -149,12 +149,12 @@ Adicione o componente no declarations e entryComponents
 
 ## Como usar o componente na página home
 Adicione essa linha no seu home.html
-```sh
+```html
 <autocomplete-photon label="Origem" placeholder="Qual o local da solicitação?" (onCoordinate)="getCoordinateOrigem($event)" (onClickIcon)="showMapa('origem', 'Origem')"></autocomplete-photon>
 ```
 
 Adicione no home.ts o código abaixo para obter a latitude e longitude
-```sh
+```typescript
 getCoordinateOrigem(coordinate : any){
     this.latitudeOrigem = coordinate.latitude;
     this.longitudeOrigem = coordinate.longitude;
@@ -166,3 +166,4 @@ getCoordinateOrigem(coordinate : any){
 ```
 
 ## Veja um exemplo do componente funcionando
+![](https://github.com/pauloanalista/AutocompletePlacesWithPhotonForIonic3/blob/master/PhotonComponentIonic3.gif?raw=true)
