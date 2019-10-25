@@ -1,10 +1,17 @@
 # AutocompletePlacesWithPhotonForIonic3
 Autocomplete de locais semelhante ao do Google Maps(Places) para ionic 3 usando Photon (Gratuito)
 
-![](http://photon.komoot.de/static/img/photon_logo.png)
-http://photon.komoot.de/
+## Proposta
+Criei este componente com a finalidade de ajudar empresas e profissionais autonomos ha não dependerem mais da Places API do Google Maps.
+Depois da mudança da política de monetização da Google o custo para usar essa API ficou muito alto, estava pagando em média 7 mil reais, com este novo componente o custo foi zerado.
 
-[Photon API](http://photon.komoot.de)
+OBS: Quero deixar claro que a API da Google tem muito mais qualidade, muito mais estabelecimentos, mas para quem tiver desesperado essa é uma ótima alternativa.
+
+![](http://photon.komoot.de/static/img/photon_logo.png)
+
+
+
+# [Photon API](http://photon.komoot.de)
 
 ## Criando o componente para Ionic 3
 ```sh
