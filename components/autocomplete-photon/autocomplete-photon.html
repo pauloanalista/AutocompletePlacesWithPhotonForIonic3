@@ -1,0 +1,15 @@
+<ion-item>
+  <ion-label stacked>
+    <span class="titulo_label">{{label}}</span>
+  </ion-label>
+  <ion-input #criterio type="text" class="iconRight" [placeholder]="placeholder" (keyup)="filtrar(criterio.value)" (ionBlur)="onBlur()" (ionFocus)="onFocus()" [(ngModel)]="localSelecionado" clearInput>
+  </ion-input>
+  <ion-icon [name]="icone" item-end color="primary" (click)="clickIcon()"></ion-icon>
+</ion-item>
+
+<ion-list no-lines *ngIf="localCollection?.length > 0 && digitando==true">
+  <ion-item *ngFor="let local of localCollection" (click)="selecionar(local)">
+    <b>{{local.properties.name}}</b>
+    <p text-wrap>{{local.properties.street}}, {{local.properties.city}} - {{local.properties.state}}</p>
+  </ion-item>
+</ion-list>
